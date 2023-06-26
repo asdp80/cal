@@ -8,12 +8,13 @@ int main() {
 	printf("3. 곱하기\n");
 	printf("4. 나누기\n");
 
+
 	while (1) {
 		int select = 0;
 		double num1 = 0.0, num2 = 0.0;
 
 		printf("원하는 작업을 선택하세요 (1-4): ");
-		scanf("%d", &select);
+		scanf_s("%d", &select);
 
 		if (select < 1 || select > 4) {
 			printf("잘못된 선택입니다. 프로그램을 종료합니다.\n");
@@ -21,7 +22,7 @@ int main() {
 		}
 
 		printf("실수 두 개를 입력하세요: ");
-		scanf("%lf %lf", &num1, &num2);
+		scanf_s("%lf %lf", &num1, &num2);
 
 		switch (select) {
 		case 1:
